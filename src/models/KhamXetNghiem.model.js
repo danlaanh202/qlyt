@@ -2,6 +2,7 @@ module.exports = (sequelize, DataTypes) => {
   const KhamXetNghiem = sequelize.define("KhamXetNghiem", {
     chan_doan: {
       type: DataTypes.STRING(45),
+      allowNull: false,
     },
     id_benh_nhan: {
       type: DataTypes.STRING(45),
@@ -18,15 +19,19 @@ module.exports = (sequelize, DataTypes) => {
     },
     ca125: {
       type: DataTypes.FLOAT,
+      allowNull: false,
     },
     he4: {
       type: DataTypes.FLOAT,
+      allowNull: false,
     },
     afp: {
       type: DataTypes.FLOAT,
+      allowNull: false,
     },
     ket_qua: {
       type: DataTypes.STRING(45),
+      allowNull: false,
     },
     dau_ha_vi: {
       type: DataTypes.BOOLEAN,
